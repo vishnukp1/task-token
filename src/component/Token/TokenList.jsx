@@ -17,14 +17,25 @@ const TokenList = ({ value }) => {
             "&:hover": {
               backgroundColor: "#FFF8F4",
               cursor: "pointer",
-             
             },
           }}
         >
           <Grid container>
             <Grid item xs={8} sm={8} md={6} lg={8}>
-              <Typography sx={{ mr: "50%" }} variant="subtitle1">
-                {column.token}
+              <Typography variant="subtitle1">
+                <span style={{ fontWeight: "bold", fontSize: "18px" }}>
+                  {column.token}
+                </span>{" "}
+                <span
+                  style={{
+                   
+                 
+                    fontSize: "12px",
+                 
+                  }}
+                >
+                  {column.category}
+                </span>
               </Typography>
             </Grid>
 

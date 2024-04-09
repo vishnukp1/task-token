@@ -19,10 +19,13 @@ const TokenQueueMngt = () => {
             sx={{
               display: "flex",
               justifyContent: "space-between",
-              my: "25px",
+            marginTop:"12px"
             }}
           >
-            <Title />
+            <Box sx={{ marginTop:"18px"}}>
+            <Title  />
+            </Box>
+           
            <SearchBar/>
           </Box>
           <Grid container spacing={2}>

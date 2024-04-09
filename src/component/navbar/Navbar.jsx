@@ -78,20 +78,16 @@ function Navbar() {
               <Avatar alt="Remy Sharp" src={logo} />
             </IconButton>
           </Tooltip>
-          {isScreenLarge ? (
+          {isScreenLarge && (
             <Button
               aria-controls="dropdown-menu"
               aria-haspopup="true"
               onClick={handleClick}
               endIcon={<ArrowDropDownIcon />} // Add dropdown icon
-              sx={{ textTransform: "none", color: "black", ...(isScreenLarge && { mb: "18px" }) }}
+              sx={{ color: "black", ...(isScreenLarge && { mb: "18px" }) }}
             >
               Ankit gupta
             </Button>
-          ) : (
-            <Typography variant="body1" sx={{ color: "black" }}>
-              ankit gupta
-            </Typography>
           )}
           <Menu
             id="dropdown-menu"

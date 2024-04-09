@@ -2,7 +2,7 @@ import { Box, Paper, Typography } from "@mui/material";
 
 export default function PatientTable({ children, title }) {
   return (
-    <Paper sx={{ pr: "10px" }}>
+    <Paper sx={{ pr: "10px",}}>
       <Box
         sx={{
           display: "flex",

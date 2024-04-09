@@ -8,10 +8,10 @@ import DropDown from "../dropdown/DropDown";
 import LabelCounts from "../labels/LabelCounts";
 
 const tokenDetails = [
-  { id: "12", token: "100 (Pregnancy)", bgcolor: "#FFF1F1" },
-  { id: "13", token: "101 (Physical Challages)", bgcolor: "#F1FAFF" },
-  { id: "14", token: "102 (Senior Citizen)", bgcolor: "#F1FAFF" },
-  { id: "15", token: "103 (others)", bgcolor: "#FFF1F1" },
+  { id: 12, token: 100 ,category :"(Pregnancy)", bgcolor: "#FFF1F1" },
+  { id: 13, token: 101 ,category :"(Physically Challenge)", bgcolor: "#F1FAFF" },
+  { id: 14, token: 102 ,category :"(Senior Citizen)", bgcolor: "#F1FAFF" },
+  { id: 15, token: 103 ,category :"(others)", bgcolor: "#FFF1F1" },
 ];
 const SpecialNeed = () => {
   return (
