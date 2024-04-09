@@ -10,6 +10,9 @@ const tokenDetails = [
   { id: 13, token: 1003 },
   { id: 14, token: 1004 },
   { id: 15, token: 1007 },
+  { id: 13, token: 1008 },
+  { id: 14, token: 1000 },
+ 
 ];
 
 export default function TokenCard() {

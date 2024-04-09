@@ -11,7 +11,7 @@ export default function PatientTable({ children, title }) {
           pt: "20px",
         }}
       >
-        <Typography sx={{ fontSize: "20px", fontWeight: "bold" }} mb={2}>
+        <Typography sx={{ fontSize: "18px", fontWeight: "" }} mb={2}>
           {title}
         </Typography>
         <Box sx={{ display: "flex" }}>

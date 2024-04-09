@@ -23,21 +23,21 @@ const SpecialNeed = () => {
           padding: "20px",
         }}
       >
-        <Typography sx={{ fontSize: "18px", fontWeight: "bold" }}>
+        <Typography sx={{ fontSize: "18px",mt:"11px"}}>
           Patient with Special Needs
         </Typography>
         <DropDown logo="" value="All" />
       </Box>
 
       <Box
-        sx={{ display: "flex", justifyContent: "space-between", mx: "10px" }}
+        sx={{ display: "flex", justifyContent: "space-between", mx: "10px" ,mb:"15px"}}
       >
         <StatusBar />
 
         <Typography variant="h6">Total 258</Typography>
       </Box>
       <Box
-        sx={{ display: "flex", justifyContent: "space-between", mx: "10px" }}
+        sx={{ display: "flex", justifyContent: "space-between", mx: "10px" , mb: "10px"}}
       >
         <TokenFilter />
 

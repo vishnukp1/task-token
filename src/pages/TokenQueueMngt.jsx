@@ -19,7 +19,8 @@ const TokenQueueMngt = () => {
             sx={{
               display: "flex",
               justifyContent: "space-between",
-            marginTop:"12px"
+            marginTop:"18px",
+            marginBottom:"18px"
             }}
           >
             <Box sx={{ marginTop:"18px"}}>

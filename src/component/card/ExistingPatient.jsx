@@ -6,10 +6,10 @@ import TokenFilter from "../Token/TokenFilter";
 import TokenList from "../Token/TokenList";
 
 const tokenDetails = [
-  { id: 12, token: 1002 },
-  { id: 13, token: 1003 },
-  { id: 14, token: 1004 },
-  { id: 15, token: 1007 },
+  { id: 12, token: 1001 },
+  { id: 13, token: 1004 },
+  { id: 14, token: 1005 },
+  { id: 15, token: 1006 },
 ];
 
 export default function ExistingPatients() {

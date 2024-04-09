@@ -11,6 +11,7 @@ const TokenList = ({ value }) => {
           key={column.id}
           sx={{
             display: "flex",
+            height: "3rem",
             backgroundColor: column.bgcolor, // Accessing bgcolor from tokenDetails array
             alignItems: "center",
             paddingY: "10px",
@@ -28,10 +29,8 @@ const TokenList = ({ value }) => {
                 </span>{" "}
                 <span
                   style={{
-                   
-                 
-                    fontSize: "12px",
-                 
+                    fontSize: "14px",
+                    fontFamily:"sans-serif"
                   }}
                 >
                   {column.category}

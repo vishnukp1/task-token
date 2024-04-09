@@ -1,10 +1,10 @@
 import { Box, Typography } from "@mui/material";
 
 const filterLimit = [
-  { id: "name", label: "All" },
-  { id: "code", label: "142" },
-  { id: "code", label: "56" },
-  { id: "code", label: "88" },
+  { id: 12, label: "All" },
+  { id: 13, label: 142 },
+  { id: 14, label: 56 },
+  { id: 15, label: 88 },
 ];
 
 const TokenFilter = () => {
@@ -15,7 +15,7 @@ const TokenFilter = () => {
           key={column.id}
           sx={{ mx: "15px", marginBottom: "10px", textAlign: "center" }}
         >
-          <Typography sx={{ fontSize: "15px" }} variant="subtitle1">
+          <Typography sx={{ fontSize: "15px" ,}} variant="subtitle1">
             {column.label}
           </Typography>
         </Box>

@@ -16,12 +16,12 @@ const ReceptionistDetails = () => {
   return (
     <Box sx={{ display: "flex" }}>
       {receptionistDate.map((details) => (
-        <Box key={details.id} sx={{ marginRight: "6px", display: "flex" }}>
+        <Box key={details.id} sx={{ marginRight: "8px", display: "flex" }}>
           {" "}
           <DetailsBox>{details.sex}</DetailsBox>
           <DetailsBox>{details.age}</DetailsBox>
           <DetailsBox>{details.position}</DetailsBox>
-          <Typography sx={{ fontSize: "10px", ml: "2px" }} variant="subtitle1">
+          <Typography sx={{ fontSize: "10px", ml: "8px" }} variant="subtitle1">
             {details.number}
           </Typography>
         </Box>
