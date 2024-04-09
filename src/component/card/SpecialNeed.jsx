@@ -8,10 +8,10 @@ import DropDown from "../dropdown/DropDown";
 import LabelCounts from "../labels/LabelCounts";
 
 const tokenDetails = [
-  { id: "12", token: "100 (Pregnancy)"},
-  { id: "13", token: "101 (Physical Challages)"},
-  { id: "14", token: "102 (Senior Citizen)"},
-  { id: "15", token: "103 (others)"},
+  { id: "12", token: "100 (Pregnancy)" },
+  { id: "13", token: "101 (Physical Challages)" },
+  { id: "14", token: "102 (Senior Citizen)" },
+  { id: "15", token: "103 (others)" },
 ];
 const SpecialNeed = () => {
   return (
@@ -24,7 +24,7 @@ const SpecialNeed = () => {
         }}
       >
         <Typography variant="h6">Patient with Special Needs</Typography>
-        <DropDown logo=""  value="All"/>
+        <DropDown logo="" value="All" />
       </Box>
 
       <Box sx={{ display: "flex", justifyContent: "space-between" }}>
@@ -35,8 +35,8 @@ const SpecialNeed = () => {
       <Box sx={{ display: "flex", justifyContent: "space-between" }}>
         <TokenFilter />
 
-        <LabelCounts value="New" count={86}/>
-        <LabelCounts value="Existing" count={200}/>
+        <LabelCounts value="New" count={86} />
+        <LabelCounts value="Existing" count={200} />
       </Box>
       <TokenList value={tokenDetails} />
     </Card>

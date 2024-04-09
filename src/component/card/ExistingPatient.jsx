@@ -12,10 +12,10 @@ const tokenDetails = [
   { id: "15", token: "1007" },
 ];
 
-export default function TokenCard() {
+export default function ExistingPatients() {
   return (
     <Card sx={{ boxShadow: "none", mx: "10px", width: "100%" }}>
-      <PatientTable title="New Petient">
+      <PatientTable title="Existing Patient">
         <Box
           sx={{
             display: "flex",

@@ -1,13 +1,21 @@
-import Paper from "@mui/material/Paper";
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
+import { Box, Paper, Typography } from "@mui/material";
 
-export default function PatientTable({ children }) {
+
+
+export default function PatientTable({ children,title }) {
   return (
-    <Paper>
-      {/* New Patient and Total 258 */}
-      <Box sx={{ display: "flex", justifyContent: "space-between" ,px:"24px",pt:"20px"}}>
-        <Typography sx={{ fontSize: "18px" }}>New Patient</Typography>
+    <Paper sx={{pr:"10px"}}>
+    
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          px: "24px",
+          pt: "20px",
+       
+        }}
+      >
+        <Typography sx={{ fontSize: "20px" ,fontWeight:"bold"}} mb={2}>{title}</Typography>
         <Box sx={{ display: "flex" }}>
           <Typography sx={{ fontSize: "15px" }}>Total</Typography>
           <Typography sx={{ fontWeight: "bold" }}>258</Typography>

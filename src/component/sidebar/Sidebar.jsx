@@ -1,6 +1,5 @@
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import { Box, IconButton, Typography } from "@mui/material";
+
+import { Box, IconButton, List, ListItem, Typography } from "@mui/material";
 import RoojhLogo from "../../assets/image/roojh.png";
 import Home from "../../assets/image/home.png";
 
@@ -24,7 +23,7 @@ const Sidebar = () => {
         <IconButton>
           <img style={{ width: "2rem" }} src={Home} alt="" />
         </IconButton>
-        <Typography sx={{ color: "#E67136" ,mt:"-22px" }}>Home</Typography>
+        <Typography sx={{ color: "#E67136", mt: "-22px" }}>Home</Typography>
       </List>
     </Box>
   );

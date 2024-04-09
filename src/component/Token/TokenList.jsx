@@ -3,9 +3,7 @@ import DoubleArrow from "../../assets/image/Union.png";
 import reload from "../../assets/image/Union (3).png";
 import tick from "../../assets/image/Union (2).png";
 
-
-
-const TokenList = ({value}) => {
+const TokenList = ({ value }) => {
   return (
     <Box sx={{ marginBottom: "20px" }}>
       {value.map((column) => (

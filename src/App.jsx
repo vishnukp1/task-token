@@ -1,17 +1,18 @@
 import { Box, Grid } from "@mui/material";
 import Navbar from "./component/navbar/Navbar";
-import SearchIcons from "./component/search/SearchIcons";
 import Title from "./component/title/Title";
 import TokenCard from "./component/card/TokenCard";
 import SpecialNeed from "./component/card/SpecialNeed";
 import Sidebar from "./component/sidebar/Sidebar";
+import ExistingPatients from "./component/card/ExistingPatient";
+import SearchBar from "./component/search/SearchBar";
 
 function App() {
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex", height: "100vh" }}>
       <Sidebar />
       <Box sx={{ flex: 1 }}>
-        <Box sx={{ background: "#F6F6F6" }}>
+        <Box sx={{ background: "#F6F6F6", height: "100%" }}>
           <Navbar />
           <Box mx={2}>
             <Box
@@ -22,14 +23,14 @@ function App() {
               }}
             >
               <Title />
-              <SearchIcons />
+             <SearchBar/>
             </Box>
             <Grid container spacing={2}>
               <Grid item md={4} sm={12} xs={12}>
                 <TokenCard />
               </Grid>
               <Grid item md={4} sm={12} xs={12}>
-                <TokenCard />
+               <ExistingPatients/>
               </Grid>
               <Grid item md={4} sm={12} xs={12}>
                 <SpecialNeed />
