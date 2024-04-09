@@ -20,19 +20,19 @@ const SpecialNeed = () => {
         sx={{
           display: "flex",
           justifyContent: "space-between",
-          padding: "10px",
+          padding: "20px",
         }}
       >
-        <Typography variant="h6">Patient with Special Needs</Typography>
+        <Typography sx={{fontSize:"18px",fontWeight:"bold"}}>Patient with Special Needs</Typography>
         <DropDown logo="" value="All" />
       </Box>
 
-      <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+      <Box sx={{ display: "flex", justifyContent: "space-between" ,mx:"10px" }}>
         <StatusBar />
 
         <Typography variant="h6">Total 258</Typography>
       </Box>
-      <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+      <Box sx={{ display: "flex", justifyContent: "space-between",mx:"10px" }}>
         <TokenFilter />
 
         <LabelCounts value="New" count={86} />
