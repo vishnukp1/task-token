@@ -9,7 +9,7 @@ const SearchBar= () => {
         type="search"
         size="small"
         InputProps={{
-          endAdornment: <SearchIcon style={{ color: "red" }} />,
+          endAdornment: <SearchIcon style={{ color: "#F46524" }} />,
           sx: {
             width: "300px",
             bgcolor: "white",

@@ -8,16 +8,15 @@ const styles = {
   },
   box: {
     display: "flex",
+    justifyContent: "center", // Horizontally center the content
     padding: "5px",
     borderRadius: "5px",
-  },
-
-  existingBox: {
-    backgroundColor: "#D1ECF1",
+    width: "6rem",
   },
   text: {
     fontSize: "14px",
     whiteSpace: "nowrap",
+    textAlign: "center",
   },
   boldText: {
     fontWeight: "bold",
@@ -25,10 +24,10 @@ const styles = {
   },
 };
 
-function LabelCounts({ value, count }) {
+function LabelCounts({ value, count, bgcolor }) {
   return (
     <Box sx={styles.container}>
-      <Box sx={{ ...styles.box, ...styles.existingBox }}>
+      <Box sx={{ ...styles.box, backgroundColor: bgcolor }}>
         <Typography variant="body1" sx={{ ...styles.text }}>
           <span>{value}</span>
           <span style={styles.boldText}>{count}</span>

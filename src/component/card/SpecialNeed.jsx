@@ -8,10 +8,10 @@ import DropDown from "../dropdown/DropDown";
 import LabelCounts from "../labels/LabelCounts";
 
 const tokenDetails = [
-  { id: "12", token: "100 (Pregnancy)" },
-  { id: "13", token: "101 (Physical Challages)" },
-  { id: "14", token: "102 (Senior Citizen)" },
-  { id: "15", token: "103 (others)" },
+  { id: "12", token: "100 (Pregnancy)", bgcolor: "#FFF1F1" },
+  { id: "13", token: "101 (Physical Challages)", bgcolor: "#F1FAFF" },
+  { id: "14", token: "102 (Senior Citizen)", bgcolor: "#F1FAFF" },
+  { id: "15", token: "103 (others)", bgcolor: "#FFF1F1" },
 ];
 const SpecialNeed = () => {
   return (
@@ -23,21 +23,28 @@ const SpecialNeed = () => {
           padding: "20px",
         }}
       >
-        <Typography sx={{fontSize:"18px",fontWeight:"bold"}}>Patient with Special Needs</Typography>
+        <Typography sx={{ fontSize: "18px", fontWeight: "bold" }}>
+          Patient with Special Needs
+        </Typography>
         <DropDown logo="" value="All" />
       </Box>
 
-      <Box sx={{ display: "flex", justifyContent: "space-between" ,mx:"10px" }}>
+      <Box
+        sx={{ display: "flex", justifyContent: "space-between", mx: "10px" }}
+      >
         <StatusBar />
 
         <Typography variant="h6">Total 258</Typography>
       </Box>
-      <Box sx={{ display: "flex", justifyContent: "space-between",mx:"10px" }}>
+      <Box
+        sx={{ display: "flex", justifyContent: "space-between", mx: "10px" }}
+      >
         <TokenFilter />
 
-        <LabelCounts value="New" count={86} />
-        <LabelCounts value="Existing" count={200} />
+        <LabelCounts bgcolor="#F1FAFF" value="New" count={86} />
+        <LabelCounts bgcolor="#FFF1F1" value="Existing" count={200} />
       </Box>
+
       <TokenList value={tokenDetails} />
     </Card>
   );

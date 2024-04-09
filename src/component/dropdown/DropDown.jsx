@@ -16,16 +16,17 @@ export default function DropDown({ value, logo }) {
 
   return (
     <FormControl
-      sx={{ m: 1, minWidth: 150, height: "auto", paddingY: 0 }}
+      sx={{ m: 1, minWidth: 150, height: "auto", paddingY: 0, position: 'relative' }} // Added relative positioning
       size="small"
     >
       <IconButton
-        style={{
+        sx={{
           position: "absolute",
-          left: "0.1rem",
+          left: "0",
           top: "50%",
           transform: "translateY(-50%)",
-          paddingRight: "8rem",
+          paddingLeft: "0.5rem", // Adjusted padding
+          zIndex: 1, // Ensure the icon button is above the border
         }}
       >
         <img src={logo} alt="" />
@@ -35,7 +36,10 @@ export default function DropDown({ value, logo }) {
           fontSize: "0.8rem",
           color: "black",
           position: "absolute",
-          left: "1.2rem",
+          left: "2.5rem", // Adjusted left position
+          top: "50%", // Center vertically
+          transform: "translateY(-50%)",
+          zIndex: 0, // Ensure the label is below the border
         }}
       >
         {value}

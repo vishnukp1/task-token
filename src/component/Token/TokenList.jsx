@@ -11,11 +11,13 @@ const TokenList = ({ value }) => {
           key={column.id}
           sx={{
             display: "flex",
+            backgroundColor: column.bgcolor, // Accessing bgcolor from tokenDetails array
             alignItems: "center",
             paddingY: "10px",
             "&:hover": {
               backgroundColor: "#FFF8F4",
               cursor: "pointer",
+             
             },
           }}
         >
