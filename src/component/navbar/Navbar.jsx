@@ -18,7 +18,7 @@ import ReceptionistDetails from "./ReceptionistDetails";
 import logo from "../../assets/image/Profile (1).png";
 import image from "../../assets/image/image 101.png";
 import React from "react";
-import Selects from "../SELESCT/Selects";
+
 
 const options = ["Option 1", "Option 2", "Option 3"];
 
