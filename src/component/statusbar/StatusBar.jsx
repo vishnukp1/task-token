@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useMediaQuery } from "@mui/material";
 import Brightness1Icon from "@mui/icons-material/Brightness1";
 
 const status = [
@@ -20,8 +20,10 @@ const status = [
 ];
 
 const StatusBar = () => {
+  const matches = useMediaQuery('(min-width:1200px) and (max-width:1370px)');
+
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex", ml: matches ? "2px":  "18px" }}>
       {status.map((column) => (
         <Box
           key={column.id}
@@ -30,14 +32,14 @@ const StatusBar = () => {
             flex: 1,
             minWidth: column.minWidth,
             textAlign: "center",
-            mx: "0%",
-          }} // Adjusted font size
+            ml: matches ? "px" : 0,
+          }}
         >
           <Brightness1Icon
-            sx={{ width: "13px", mr: "5px", color: column.background }}
+            sx={{ width: matches ? "8px":  "13px" , mr: "5px", color: column.background }}
           />
           <Typography
-            sx={{ fontSize: "14px", mt: "1px", mr: "5px" }}
+            sx={{ fontSize: matches ? "8px":  "12px" , mt: matches ? "5px":  "1px", mr: "5px" }}
             variant="subtitle1"
           >
             {column.label}

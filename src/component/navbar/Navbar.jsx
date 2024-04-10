@@ -18,6 +18,7 @@ import ReceptionistDetails from "./ReceptionistDetails";
 import logo from "../../assets/image/Profile (1).png";
 import image from "../../assets/image/image 101.png";
 import React from "react";
+import Selects from "../SELESCT/Selects";
 
 const options = ["Option 1", "Option 2", "Option 3"];
 
@@ -41,6 +42,7 @@ function Navbar() {
         color: "black",
         boxShadow: "none",
         height: "55px",
+      
       }}
     >
       <Toolbar
@@ -56,23 +58,17 @@ function Navbar() {
               <Avatar alt="Remy Sharp" src={logo} />
             </IconButton>
           </Tooltip>
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              marginLeft: "10px",
-            }}
-          >
+          <Box sx={{ display: "flex", flexDirection: "column", marginLeft: "10px" }}>
             <Typography variant="h6" sx={{ fontWeight: "bold" }}>
               Ankit Gupta
             </Typography>
             <ReceptionistDetails />
           </Box>
-          <DropDown logo={image} value="AIIA Hospital" />
+          <DropDown logo={image} SelectValue="AIIA Hospital" />
         </Box>
+       
         <div>
           {/* Hamburger menu for mobile devices */}
-
           <Tooltip title="Open settings">
             <IconButton sx={{ p: 0, mb: "21px" }}>
               <Avatar alt="Remy Sharp" src={logo} />
@@ -86,7 +82,8 @@ function Navbar() {
               endIcon={<ArrowDropDownIcon />} // Add dropdown icon
               sx={{ color: "black", ...(isScreenLarge && { mb: "18px" }) }}
             >
-              Ankit gupta
+               <Typography variant="h6" sx={{ textTransform: 'capitalize' }}>Ankit gupta</Typography>
+
             </Button>
           )}
           <Menu

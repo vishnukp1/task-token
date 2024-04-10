@@ -17,26 +17,31 @@ const tokenDetails = [
 
 export default function TokenCard() {
   return (
-    <Card sx={{ boxShadow: "none", mx: "10px", width: "100%" }}>
+    <Card sx={{ p: '20px', boxShadow: "none",  height: "70vh" }}>
+     
+
+     
       <PatientTable title="New Petient">
         <Box
           sx={{
             display: "flex",
             justifyContent: "space-between",
             width: "100%",
+  
           }}
         >
           <Grid container>
-            <Grid item sm={6} md={12} lg={5}>
+            <Grid item sm={7} md={12} lg={5}>
               <TokenFilter />
             </Grid>
-            <Grid item sm={6} md={12} lg={7}>
+            <Grid item sm={5} md={12} lg={7}>
               <StatusBar />
             </Grid>
           </Grid>
         </Box>
         <TokenList value={tokenDetails} />
       </PatientTable>
+    
     </Card>
   );
 }

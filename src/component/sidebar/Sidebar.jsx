@@ -7,7 +7,7 @@ const Sidebar = () => {
   return (
     <Box
       open={true}
-      sx={{ bgcolor: "#284385", width: "65px" }}
+      sx={{ bgcolor: "#284385", width: "65px" ,mt:"-8px",ml:"-8px" }}
       onClose={() => {}}
     >
       <List>

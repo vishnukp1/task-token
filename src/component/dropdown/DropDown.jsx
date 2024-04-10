@@ -7,11 +7,13 @@ import {
   IconButton,
 } from "@mui/material";
 
-export default function DropDown({ value, logo }) {
+export default function DropDown({ SelectValue, logo, onChange }) {
   const [age, setAge] = React.useState("");
 
   const handleChange = (event) => {
-    setAge(event.target.value);
+    const selectedValue = event.target.value;
+    setAge(selectedValue);
+    onChange(selectedValue); // Call the onChange function with the updated value
   };
 
   return (
@@ -42,7 +44,7 @@ export default function DropDown({ value, logo }) {
           zIndex: 0, // Ensure the label is below the border
         }}
       >
-        {value}
+        {SelectValue}
       </InputLabel>
       <Select
         labelId="demo-select-small-label"

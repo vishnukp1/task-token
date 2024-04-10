@@ -1,6 +1,6 @@
 import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
-import { Box } from "@mui/material";
+import { Box, useMediaQuery } from "@mui/material";
 import StatusBar from "../statusbar/StatusBar";
 import TokenFilter from "../Token/TokenFilter";
 import TokenList from "../Token/TokenList";
@@ -14,19 +14,20 @@ const tokenDetails = [
   { id: 15, token: 103 ,category :"(others)", bgcolor: "#FFF1F1" },
 ];
 const SpecialNeed = () => {
+  const matches = useMediaQuery('(min-width:800px) and (max-width:1200px)');
   return (
-    <Card sx={{ boxShadow: "none", mx: "10px" }}>
+    <Card sx={{p: '20px', boxShadow: "none" ,height:"70vh" }}>
       <Box
         sx={{
           display: "flex",
           justifyContent: "space-between",
-          padding: "20px",
+       
         }}
       >
-        <Typography sx={{ fontSize: "18px",mt:"11px"}}>
+        <Typography sx={{ fontSize: "18px"}}>
           Patient with Special Needs
         </Typography>
-        <DropDown logo="" value="All" />
+        <DropDown logo="" SelectValue="All" />
       </Box>
 
       <Box
@@ -37,12 +38,16 @@ const SpecialNeed = () => {
         <Typography variant="h6">Total 258</Typography>
       </Box>
       <Box
-        sx={{ display: "flex", justifyContent: "space-between", mx: "10px" , mb: "10px"}}
+        sx={{ display: "flex", flexDirection:matches?"column":"row", justifyContent: "space-between", mx: "10px" , mb: "10px"}}
       >
         <TokenFilter />
 
+        <Box sx={{display: "flex"}}>
         <LabelCounts bgcolor="#F1FAFF" value="New" count={86} />
         <LabelCounts bgcolor="#FFF1F1" value="Existing" count={200} />
+        </Box>
+
+       
       </Box>
 
       <TokenList value={tokenDetails} />

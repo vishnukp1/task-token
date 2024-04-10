@@ -10,7 +10,11 @@ import SearchBar from "../component/search/SearchBar";
 const TokenQueueMngt = () => {
   return (
     <Box sx={{ display: "flex", height: "100vh" }}>
-    <Sidebar />
+     
+
+      <Sidebar />
+ 
+
     <Box sx={{ flex: 1 }}>
       <Box sx={{ background: "#F6F6F6", height: "100%" }}>
         <Navbar />
@@ -29,7 +33,7 @@ const TokenQueueMngt = () => {
            
            <SearchBar/>
           </Box>
-          <Grid container spacing={2}>
+          <Grid container spacing={3}>
             <Grid item md={4} sm={12} xs={12}>
               <TokenCard />
             </Grid>

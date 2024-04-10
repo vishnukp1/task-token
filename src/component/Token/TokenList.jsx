@@ -11,7 +11,7 @@ const TokenList = ({ value }) => {
           key={column.id}
           sx={{
             display: "flex",
-            height: "3rem",
+            height: "2.5rem",
             backgroundColor: column.bgcolor, // Accessing bgcolor from tokenDetails array
             alignItems: "center",
             paddingY: "10px",
@@ -22,7 +22,7 @@ const TokenList = ({ value }) => {
           }}
         >
           <Grid container>
-            <Grid item xs={8} sm={8} md={6} lg={8}>
+            <Grid item xs={8} sm={8} md={5} lg={7}>
               <Typography variant="subtitle1">
                 <span style={{ fontWeight: "bold", fontSize: "18px" }}>
                   {column.token}
@@ -38,7 +38,7 @@ const TokenList = ({ value }) => {
               </Typography>
             </Grid>
 
-            <Grid item xs={4} sm={4} md={6} lg={4}>
+            <Grid item xs={4} sm={4} md={7} lg={5}>
               <IconButton sx={{ mr: "5%" }}>
                 <img src={DoubleArrow} alt="" />
               </IconButton>

@@ -14,7 +14,7 @@ const tokenDetails = [
 
 export default function ExistingPatients() {
   return (
-    <Card sx={{ boxShadow: "none", mx: "10px", width: "100%" }}>
+    <Card sx={{p: '20px', boxShadow: "none", height:"70vh" }}>
       <PatientTable title="Existing Patient">
         <Box
           sx={{

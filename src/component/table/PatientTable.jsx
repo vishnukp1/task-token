@@ -2,13 +2,13 @@ import { Box, Paper, Typography } from "@mui/material";
 
 export default function PatientTable({ children, title }) {
   return (
-    <Paper sx={{ pr: "10px",}}>
+    <Paper sx={{ boxShadow:"none"}}>
       <Box
         sx={{
           display: "flex",
           justifyContent: "space-between",
-          px: "24px",
-          pt: "20px",
+          px: "10px",
+       
         }}
       >
         <Typography sx={{ fontSize: "18px", fontWeight: "" }} mb={2}>
